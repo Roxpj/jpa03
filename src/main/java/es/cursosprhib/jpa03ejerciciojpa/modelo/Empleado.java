@@ -2,8 +2,7 @@ package es.cursosprhib.jpa03ejerciciojpa.modelo;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.JoinColumn;
-import jakarta.persistence.OneToMany;
-import jakarta.persistence.OneToOne;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
@@ -13,7 +12,7 @@ public class Empleado extends Persona {
 
 	private Integer nroEmpleado;
 	
-	@OneToOne
+	@ManyToOne
 	@JoinColumn(name = "idcategoria")
 	private Categoria categoria;
 
