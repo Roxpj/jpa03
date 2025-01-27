@@ -10,7 +10,7 @@ import jakarta.persistence.TypedQuery;
 
 public class c08 {
 
-	//8. Cantidad de Productos comprados por cada Categoria de Cliente
+	//8. Cantidad de Productos comprados por cada Categoria de Cliente // y que tengan más de cuatro unidades
 
 	public static void main(String[] args) {
 		EntityManager em = EMF.getInstance().createEntityManager();
